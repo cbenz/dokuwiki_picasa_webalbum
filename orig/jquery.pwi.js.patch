@@ -1,0 +1,11 @@
+--- jquery.pwi.js.orig	2009-11-05 18:56:08.000000000 +0100
++++ jquery.pwi.js	2009-11-05 18:56:38.000000000 +0100
+@@ -26,7 +26,7 @@
+ 		}
+ 		function _start() {
+ 			if (settings.username === '') {
+-				alert('Make sure you specify at least your username.' + '\n' + 'See http://pwi.googlecode.com for more info');
++				alert('Make sure you specify at least your username.' + '\n' + 'See pwi.googlecode.com for more info');
+ 				return;
+ 			}
+ 			switch (settings.mode) {

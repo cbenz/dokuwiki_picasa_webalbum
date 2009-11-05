@@ -1,0 +1,22 @@
+Picasa web album plugin
+=======================
+
+Author: Christophe Benz <christophe.benz@gmail.com>
+
+Based on PWI: <http://code.google.com/p/pwi/>
+
+Required dokuwiki plugin:
+ * jquery <http://www.dokuwiki.org/plugin:jquery>
+   (maxb.net version <http://maxb.net/blog/2009/02/24/dokuwiki-jquery>)
+
+Include all albums of Picasa account
+------------------------------------
+
+Put this tag on a Dokuwiki page : {{picasawebalbum>user_id}}
+For example: {{picasawebalbum>tester}} => http://picasaweb.google.fr/tester
+
+Include a specific album
+------------------------
+
+Put this tag on a Dokuwiki page : {{picasawebalbum>user_id:album_id}}
+For example: {{picasawebalbum>tester:Maui}} => http://picasaweb.google.fr/tester/Maui
