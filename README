@@ -9,6 +9,22 @@ Required dokuwiki plugin:
  * jquery <http://www.dokuwiki.org/plugin:jquery>
    (maxb.net version <http://maxb.net/blog/2009/02/24/dokuwiki-jquery>)
 
+Installation
+------------
+
+Needs to patch Dokuwiki! Edit inc/plugincontroller.class.php:
+
+        function Doku_Plugin_Controller() {
+            $this->_populateMasterList();
+       +    sort($this->list_enabled);
+        }
+
+Now plugins are sorted alphabetically.
+
+$ mkdir lib/plugins/jquery_picasawebalbum
+
+The picasawebalbum plugin must be loaded after the jquery plugin.
+
 Include all albums of Picasa account
 ------------------------------------
 
